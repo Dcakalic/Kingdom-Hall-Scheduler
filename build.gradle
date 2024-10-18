@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example' // Replace with your group ID
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Use Maven Central repository
+}
+
+dependencies {
+    // Apache PDFBox dependency
+    implementation 'org.apache.pdfbox:pdfbox:2.0.29' // Replace with the latest version if necessary
+
+    // Test dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
